@@ -65,7 +65,7 @@
 .hero__text--heading {
   font-size: 5rem;
   text-transform: uppercase;
-  animation: slideInTop 1s ease-out 1s forwards;
+  animation: slideInTop 1s ease-out backwards;
 }
 .hero__text--paragraph {
   font-size: 1.8rem;
