@@ -1,0 +1,424 @@
+@import "./global.css";
+
+/* hero section */
+.hero {
+  margin-top: 4rem;
+  margin-bottom: 0;
+  height: 70vh;
+  padding: 1.5rem 5rem;
+  background-color: rgb(0, 82, 206);
+}
+.hero__wave {
+  margin-top: -0.1rem;
+}
+.hero__img--container {
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.hero__img {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.pexels.com/photos/2422287/pexels-photo-2422287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+  position: relative;
+  z-index: 1;
+}
+.hero__img--container::after {
+  content: "";
+  position: absolute;
+  margin: 1rem;
+  top: -1rem;
+  left: 1rem;
+  width: 100%;
+  height: 105%;
+  background-color: rgba(180, 215, 92, 1);
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+}
+.hero__text--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  color: var(--color-white);
+}
+.hero__text--heading {
+  font-size: 5rem;
+  text-transform: uppercase;
+  animation: slideInTop 1s ease-out forwards;
+}
+.hero__text--paragraph {
+  font-size: 1.8rem;
+  text-align: justify;
+  animation: slideInLeft 1s ease-out 0.7s backwards;
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+  position: relative;
+}
+.btn-main {
+  border-radius: 10rem;
+  color: var(--color-blue);
+  background-color: var(--color-green);
+  font-weight: bold;
+  margin-top: 2rem;
+  animation: slideInBottom 1s ease-out 1.5s backwards;
+}
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.2);
+}
+.btn-main:hover::after {
+  transform: scaleY(1.6) scaleX(1.4);
+  opacity: 0;
+}
+.btn-main::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-green);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 10rem;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 1024px) {
+  .hero__text--heading {
+    font-size: 4.5rem;
+  }
+  .hero__text--paragraph {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero__text--container {
+    width: 47%;
+  }
+  .hero__text--heading {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .hero {
+    padding: 1rem;
+  }
+  .hero__text--heading {
+    font-size: 3rem;
+  }
+  .hero__text--container {
+    width: 100%;
+    margin: 0 auto 2rem;
+  }
+  .hero__img--container {
+    width: 97%;
+  }
+  .hero__img--container::after {
+    width: 98%;
+    height: 104%;
+  }
+  .btn-main {
+    margin-top: 5px;
+  }
+}
+
+/* Animations */
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Who we are section */
+.about-section {
+  margin-top: -7%;
+}
+.about__text--container {
+  width: 45%;
+}
+.about-section {
+  background-image: url(https://www.yiponline.com/resources/img/demos/it-services/puzzle-and-dots.png);
+
+  animation: fadeIn 1s ease-in-out 1s backwards;
+  padding-bottom: 2rem;
+}
+.section-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  color: var(--color-dark);
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.section-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-darker);
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.about__text span {
+  font-size: 1.8rem;
+  display: inline-block;
+  color: var(--color-dark);
+  text-align: justify;
+}
+.about__img--container {
+  width: 40%;
+  position: relative;
+}
+.about__img--container:hover .about__img:not(:hover) {
+  transform: scale(0.9);
+}
+.about__img {
+  width: 45%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.2rem;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 0.8rem;
+}
+.about__img:hover {
+  outline: 1.5rem solid var(--color-green);
+  transform: scale(1.05);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+.about__img--1 {
+  left: 0;
+  top: 2rem;
+}
+.about__img--2 {
+  left: 40%;
+  top: 4rem;
+}
+.about__img--3 {
+  left: 20%;
+  top: 10rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about__text p {
+    font-size: 2.2rem;
+  }
+  .about__text span {
+    font-size: 1.5rem;
+  }
+  .about__img {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about__text p {
+    font-size: 1.8rem;
+  }
+  .about__text span {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .flex-item-2 {
+    width: 90%;
+  }
+  .about__text--container {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Mission and Vision section */
+.mv-section {
+  margin: 6rem auto 8rem;
+  animation: fadeIn 1s ease-in-out 1.3s backwards;
+}
+.mv__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--color-white);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  width: 35%;
+  outline: 0.2rem solid white;
+  transition: all 0.4s;
+  user-select: none;
+}
+.mv__item--img1 {
+  background-image: linear-gradient(
+      var(--color-light-blue),
+      var(--color-light-blue)
+    ),
+    url(https://images.pexels.com/photos/5324973/pexels-photo-5324973.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.mv__item--img2 {
+  background-image: linear-gradient(
+      var(--color-light-green),
+      var(--color-light-green)
+    ),
+    url(https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.mv__item--img {
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+.mv__item--title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  color: var(--color-white);
+  padding: 8px;
+}
+.mv__item--title1 {
+  background-color: var(--color-blue);
+}
+.mv__item--title2 {
+  background-color: var(--color-green);
+}
+.mv__item--text {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  padding: 2rem;
+}
+.mv__item:hover {
+  transform: translateY(-1rem);
+}
+@media only screen and (max-width: 640px) {
+  .mv-section {
+    margin-top: 65%;
+  }
+  .mv__item {
+    width: 90%;
+    margin-bottom: 4rem;
+  }
+}
+
+/* CTA Section */
+@media only screen and (max-width: 640px) {
+  .cta__text--heading {
+    margin: 0 auto 2.5rem;
+  }
+  .cta {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Solutions section */
+.solutions-section p {
+  text-align: center;
+}
+.solutions__container {
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.solution {
+  width: 25%;
+  background-color: var(--color-white);
+  box-shadow: 5px 1rem 1rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.solution:hover {
+  transform: scale(1.1);
+}
+.solution-size {
+  width: 80%;
+  margin: auto;
+}
+.solution img {
+  object-fit: cover;
+  object-position: center;
+}
+.solution span {
+  padding: 2rem 0;
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 640px) {
+  .solution {
+    width: 90%;
+  }
+}
