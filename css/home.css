@@ -198,15 +198,6 @@
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* Who we are section */
 .about-section {
   margin-top: -7%;
@@ -216,8 +207,6 @@
 }
 .about-section {
   background-image: url(https://www.yiponline.com/resources/img/demos/it-services/puzzle-and-dots.png);
-
-  animation: fadeIn 1s ease-in-out 1s backwards;
   padding-bottom: 2rem;
 }
 .section-heading {
@@ -307,7 +296,6 @@
 /* Mission and Vision section */
 .mv-section {
   margin: 6rem auto 8rem;
-  animation: fadeIn 1s ease-in-out 1.3s backwards;
 }
 .mv__item {
   display: flex;
@@ -361,6 +349,15 @@
 }
 .mv__item:hover {
   transform: translateY(-1rem);
+}
+.section-animated {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease, transform 0.5s ease;
+}
+.section-animated.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 @media only screen and (max-width: 640px) {
   .mv-section {

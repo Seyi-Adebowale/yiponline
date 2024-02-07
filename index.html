@@ -13,12 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap"
       rel="stylesheet"
     />
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script> -->
     <script
       src="https://kit.fontawesome.com/6b219ab309.js"
       crossorigin="anonymous"
@@ -26,7 +20,7 @@
   </head>
   <body>
     <div id="header"></div>
-    <main>
+    <main id="main">
       <!-- Hero section -->
       <section class="hero__section">
         <div class="hero flex-container-2">
@@ -105,7 +99,7 @@
       </section>
 
       <!-- Mission and vision section  -->
-      <section class="mv-section">
+      <section class="mv-section section-animated">
         <div class="mv flex-container-2">
           <div class="mv__item flex-item-2">
             <div class="mv__item--img mv__item--img1"></div>
@@ -147,12 +141,12 @@
       </section>
 
       <!-- Solutions section -->
-      <section class="solutions-section">
+      <section class="solutions-section ">
         <h5 class="section-heading">OUR SOLUTIONS</h5>
         <p class="section-text">
           We focus on bringing value and solve business main challenges
         </p>
-        <div class="solutions__container flex-container-2">
+        <div class="solutions__container flex-container-2 section-animated">
           <div class="solution flex-item-2">
             <img
               src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -220,14 +214,7 @@
 
     <div id="footer"></div>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-      $(function () {
-        // Load header and footer
-        $("#header").load("./components/header.html");
-        $("#footer").load("./components/footer.html");
-      });
-    </script>
     <script src="./js/script.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>
