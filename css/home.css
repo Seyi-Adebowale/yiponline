@@ -373,9 +373,11 @@
 @media only screen and (max-width: 640px) {
   .cta__text--heading {
     margin: 0 auto 2.5rem;
+    width: 100%;
   }
   .cta {
     padding: 3rem 1rem;
+
   }
 }
 
