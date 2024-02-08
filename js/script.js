@@ -28,7 +28,7 @@ function loadHeader() {
       for (let i = 0; i < nav.length; i++) {
         if (
           nav[i].innerHTML.includes("Home") &&
-          location.pathname.includes("index")
+          location.pathname.includes("index") || (location.pathname === "/")
         ) {
           nav[i].classList.add("selected");
         } else if (
