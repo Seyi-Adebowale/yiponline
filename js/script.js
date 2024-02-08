@@ -27,10 +27,10 @@ function loadHeader() {
       const nav = document.querySelectorAll(".header__nav ul li");
       for (let i = 0; i < nav.length; i++) {
         if (
-          nav[i].innerHTML.includes("Home") &&
-          location.pathname.includes("index") || (location.pathname === "/")
+          (nav[i].innerHTML.includes("Home")) &&
+          (location.pathname === "/" || location.pathname.includes("index"))
         ) {
-          nav[i].classList.add("selected");
+          nav[0].classList.add("selected");
         } else if (
           nav[i].innerHTML.includes("Products") &&
           location.pathname.includes("products")
