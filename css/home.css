@@ -65,12 +65,12 @@
 .hero__text--heading {
   font-size: 5rem;
   text-transform: uppercase;
-  animation: slideInTop 1s ease-out backwards;
+  animation: slideInTop 1s ease-out .8s backwards;
 }
 .hero__text--paragraph {
   font-size: 1.8rem;
   text-align: justify;
-  animation: slideInLeft 1s ease-out 0.7s backwards;
+  animation: slideInLeft 1s ease-out 1.5s backwards;
 }
 .btn:link,
 .btn:visited {
@@ -87,7 +87,7 @@
   background-color: var(--color-green);
   font-weight: bold;
   margin-top: 2rem;
-  animation: slideInBottom 1s ease-out 1.5s backwards;
+  animation: slideInBottom 1s ease-out 2.3s backwards;
 }
 .btn:hover {
   transform: translateY(-0.3rem);
