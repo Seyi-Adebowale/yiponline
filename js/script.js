@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 const headerContainer = document.getElementById("header");
 const footerContainer = document.getElementById("footer");
 
@@ -85,3 +86,4 @@ function loadFooter() {
 
 loadHeader();
 loadFooter();
+});
