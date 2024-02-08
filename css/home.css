@@ -92,14 +92,7 @@
   margin-top: 2rem;
   animation: slideInBottom 1s ease-out 2.3s backwards;
 }
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.2);
-}
+
 .btn-main:hover::after {
   transform: scaleY(1.6) scaleX(1.4);
   opacity: 0;
@@ -211,29 +204,15 @@
 }
 /* Who we are section */
 .about-section {
-  margin-top: -7%;
-}
-.about__text--container {
-  width: 45%;
-}
-.about-section {
+  margin-top: -10%;
   background-image: url(https://www.yiponline.com/resources/img/demos/it-services/puzzle-and-dots.png);
   padding-bottom: 2rem;
 }
-.section-heading {
-  font-size: 2.5rem;
-  text-align: center;
-  letter-spacing: 0.2rem;
-  color: var(--color-dark);
-  font-weight: bold;
-  margin-bottom: 3rem;
-}
-.section-text {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--color-darker);
+.about-section .section-text{
   text-align: justify;
-  margin-bottom: 2rem;
+}
+.about__text--container {
+  width: 45%;
 }
 .about__text span {
   font-size: 1.8rem;
@@ -361,15 +340,6 @@
 .mv__item:hover {
   transform: translateY(-1rem);
 }
-.section-animated {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1.5s ease, transform 0.5s ease;
-}
-.section-animated.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 @media only screen and (max-width: 640px) {
   .mv-section {
     margin-top: 65%;
@@ -377,18 +347,6 @@
   .mv__item {
     width: 90%;
     margin-bottom: 4rem;
-  }
-}
-
-/* CTA Section */
-@media only screen and (max-width: 640px) {
-  .cta__text--heading {
-    margin: 0 auto 2.5rem;
-    width: 100%;
-  }
-  .cta {
-    padding: 3rem 1rem;
-
   }
 }
 

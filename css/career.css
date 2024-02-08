@@ -1,0 +1,95 @@
+@import "./global.css";
+
+.sub-header {
+    background-image: linear-gradient(
+        var(--color-light-green),
+        var(--color-light-blue)
+      ),
+      url(https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+p.section-heading{
+    font-size: 1.8rem;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+.career__box{
+    padding: 1rem 5rem;
+    width: 60%;
+    max-width: 90%;
+    border: 4px solid var(--color-dark);
+    margin: 3rem auto;
+}
+.career__box.active{
+    border: 4px solid var(--color-darker);
+}
+.career__box--heading{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: space-between;
+    color: var(--color-blue);
+    font-weight: bold;
+}
+.career__box--heading i{
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+.career__box--heading i:hover{
+    color: var(--color-dark);
+}
+.career__box--content{
+    font-size: 1.6rem;
+    display: none;
+    margin: 2rem auto;
+    color: var(--color-dark);
+    word-wrap: break-word;
+}
+.career__box--content ul{
+    padding-left: 4rem;
+}
+.career__box--content .btn{
+    display: inline-block;
+}
+@media only screen and (max-width:1024px){
+    .career__box{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:768px){
+    .career__box{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:640px){
+    .career__box{
+        width: 95%;
+        padding: 1rem 3rem;
+    }
+}
+.employee-culture{
+    justify-content: space-around;
+    margin: 15rem auto 5rem;
+}
+.employee-culture__img{
+    width: 40%;
+}
+.employee-culture__img img{
+    width: 100%;
+    height: 100%;
+}
+.employee-culture__text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.employee-culture .section-text, .employee-culture .section-heading{
+    text-align: left;
+    margin: 0;
+    padding: 1rem;
+}
+@media only screen and (max-width:640px){
+    .flex-item-2{
+        width: 95%;
+    }
+}

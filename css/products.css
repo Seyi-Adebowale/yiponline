@@ -1,2 +1,108 @@
 @import "./global.css";
 
+.sub-header {
+  background-image: linear-gradient(
+      var(--color-light-green),
+      var(--color-light-blue)
+    ),
+    url(https://images.unsplash.com/photo-1611647832580-377268dba7cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+p.section-heading {
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  font-weight: 500;
+  width: 80%;
+  text-align: left;
+}
+.products {
+  margin: 5rem auto;
+}
+.products-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product {
+  height: 70vh;
+  width: 30rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.8s;
+  margin: 3rem;
+}
+.product .fa-caret-square-right {
+  position: absolute;
+  bottom: 2rem;
+  color: var(--color-white);
+  font-size: 3rem;
+}
+
+.product .section-text {
+  color: var(--color-white);
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+.product img,
+.product svg {
+  width: 90%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+.product1,
+.overlay1 {
+  background-color: #dd9103;
+}
+.product2,
+.overlay2 {
+  background-color: #940294;
+}
+.product3,
+.overlay3 {
+  background-color: rgb(2, 158, 2);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.product:hover .overlay {
+  opacity: 1;
+}
+.overlay__text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+}
+.overlay__text--content{
+    text-align: justify;
+}
+.overlay__text .btn-transparent{
+    padding: .6rem 2rem;
+    margin: 1rem auto;
+    display: inline-block;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+.overlay__text .btn-transparent:hover{
+    border-color: var(--color-green);
+}
