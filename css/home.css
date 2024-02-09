@@ -69,7 +69,7 @@
 }
 .hero__text--paragraph {
   font-size: 2.5rem;
-  text-align: justify;
+  text-align: center;
   animation: slideInLeft 1s ease-out 1.5s backwards;
 }
 .btn-main {
