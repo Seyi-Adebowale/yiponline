@@ -114,9 +114,10 @@
     font-size: 1.6rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .hero{
     flex-direction: column;
+    padding-bottom: 4rem;
   }
   .hero__text--heading {
     font-size: 4rem;
@@ -385,7 +386,7 @@
 }
 .solution span {
   padding: 2rem 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 640px) {
   .solution {
