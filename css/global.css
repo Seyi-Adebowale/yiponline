@@ -382,6 +382,7 @@ i.fa-arrow-up {
   color: var(--color-white);
   text-align: center;
   z-index: 50;
+  cursor: pointer;
 }
 i.fa-arrow-up:hover {
   opacity: 1;
