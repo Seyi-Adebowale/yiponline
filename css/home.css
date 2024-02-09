@@ -191,7 +191,7 @@
 .about-section {
   margin-top: -8.5%;
   background-image: url(https://www.yiponline.com/resources/img/demos/it-services/puzzle-and-dots.png);
-  padding-bottom: 2rem;
+  padding-bottom: 7%;
 }
 .about-section .section-text{
   text-align: justify;
@@ -211,14 +211,12 @@
 .about__img--container {
   width: 40%;
   position: relative;
-  /* height: 30vh; */
-  /* outline: 1px solid red; */
 }
 .about__img--container:hover .about__img:not(:hover) {
   transform: scale(0.9);
 }
 .about__img {
-  width: 50%;
+  width: 45%;
   box-shadow: 0 15px 4px rgba(0, 0, 0, 0.4);
   border-radius: 0.2rem;
   position: absolute;
