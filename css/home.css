@@ -215,6 +215,8 @@
 }
 .about-section .section-text{
   text-align: justify;
+  width: 100%;
+  margin: 0;
 }
 .about__text--container {
   width: 45%;
@@ -351,11 +353,13 @@
 }
 
 /* Solutions section */
-.solutions-section p {
+.solutions-section{
   text-align: center;
+  margin: auto;
 }
 .solutions__container {
   flex-wrap: wrap;
+  margin-top: 3rem;
   gap: 2rem;
 }
 .solution {
