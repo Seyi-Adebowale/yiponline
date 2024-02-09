@@ -383,7 +383,7 @@ i.fa-arrow-up {
   text-align: center;
   z-index: 50;
 }
-a i.fa-arrow-up:hover {
+i.fa-arrow-up:hover {
   opacity: 1;
 }
 
