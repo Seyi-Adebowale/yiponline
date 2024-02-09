@@ -68,8 +68,8 @@
   animation: slideInTop 1s ease-out .8s backwards;
 }
 .hero__text--paragraph {
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: 2rem;
+  text-align: justify;
   animation: slideInLeft 1s ease-out 1.5s backwards;
 }
 .btn-main {
@@ -100,6 +100,9 @@
   .hero{
     flex-direction: column;
     padding-bottom: 4rem;
+  }
+  .hero__text--paragraph{
+    text-align: center;
   }
   .hero__text--container {
     width: 100%;
