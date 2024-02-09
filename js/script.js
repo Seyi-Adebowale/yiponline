@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => response.text())
       .then((data) => {
         headerContainer.innerHTML = data;
-        // Optionally, initialize header scripts after loading (if needed)
         const navMenu = document.querySelector(".header__nav");
         function showMenu() {
           navMenu.style.right = "0";
@@ -16,11 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
           navMenu.style.right = "-800px";
         }
 
-        // Attach click event to .fas fa-bars
         const menuBtnOpen = document.querySelector(".menu__btn--open");
         menuBtnOpen.addEventListener("click", showMenu);
 
-        // Attach click event to .fas fa-times
         const menuBtnClose = document.querySelector(".menu__btn--close");
         menuBtnClose.addEventListener("click", hideMenu);
 
@@ -53,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => {
         console.error("Error loading header:", error);
-        // Handle error gracefully, e.g., display a message
       });
   }
 
@@ -62,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => response.text())
       .then((data) => {
         footerContainer.innerHTML = data;
-        // Optionally, initialize footer scripts after loading (if needed)
         let toTopIcon = document.querySelector("a i.fa-arrow-up");
         function toTopFunction() {
           if (
@@ -80,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => {
         console.error("Error loading footer:", error);
-        // Handle error gracefully
       });
   }
 

@@ -7,12 +7,15 @@
     ),
     url(https://images.unsplash.com/photo-1621255457330-7ef4e88ec27f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
+
+/* Contact boxes section */
 .contactus-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 4% 4% 0;
   text-align: center;
+  margin-top: 3rem;
 }
 .contactus-box {
   width: 50%;
@@ -40,16 +43,13 @@ h3 {
 .contactus-text a:hover {
   text-decoration: underline;
 }
-.form-map {
-  padding: 0 4%;
-  width: 100%;
-  margin: auto;
-}
 @media (max-width: 640px) {
   .contactus-box {
     width: 31rem;
   }
 }
+
+/* Form section */
 .form {
   padding: 1% 4%;
   width: 80%;
@@ -90,11 +90,11 @@ textarea {
 }
 input:focus,
 textarea:focus {
-  border-bottom: 0.3rem solid green;
+  border-bottom: 3px solid var(--color-form-green);
 }
 input:focus:invalid,
 textarea:focus:invalid {
-  border-bottom: 0.3rem solid red;
+  border-bottom: 3px solid var(--color-form-red);
 }
 .form-group {
   margin-bottom: 1.2rem;

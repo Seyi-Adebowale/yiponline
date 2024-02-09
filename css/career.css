@@ -12,6 +12,8 @@ p.section-heading{
     letter-spacing: 0;
     font-weight: 500;
 }
+
+/* Career boxes section */
 .career__box{
     padding: 1rem 5rem;
     width: 60%;
@@ -34,8 +36,16 @@ p.section-heading{
     font-size: 3.5rem;
     cursor: pointer;
 }
-.career__box--heading i:hover{
-    color: var(--color-dark);
+.career__box--title{
+    font-size: 1.8rem;
+}
+@media (hover:hover) {
+    .career__box--heading i:hover{
+        color: var(--color-dark);
+    }
+ }
+.career__box--heading i:active{
+    color: var(--color-blue);
 }
 .career__box--content{
     font-size: 1.6rem;
@@ -66,6 +76,8 @@ p.section-heading{
         padding: 1rem 3rem;
     }
 }
+
+/* Employee culture section */
 .employee-culture{
     justify-content: space-around;
     margin: 15rem auto 5rem;
@@ -79,9 +91,6 @@ p.section-heading{
 }
 .employee-culture__text{
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .employee-culture .section-text, .employee-culture .section-heading{
     text-align: left;

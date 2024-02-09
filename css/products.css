@@ -11,39 +11,39 @@ p.section-heading {
   font-size: 1.8rem;
   letter-spacing: 0;
   font-weight: 500;
-  width: 80%;
-  text-align: left;
+  text-align: justify;
 }
+
+/* Products section */
 .products {
   margin: 5rem auto;
+  user-select: none;
 }
-.products-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.products-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .product {
-  height: 70vh;
   width: 30rem;
+  padding: 1.5rem 0;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative;
   transition: all 0.8s;
   margin: 3rem;
 }
 .product .fa-caret-square-right {
-  position: absolute;
-  bottom: 2rem;
+  margin: 1rem auto;
   color: var(--color-white);
   font-size: 3rem;
+  display: block;
 }
-
-.product .section-text {
+.product-name {
   color: var(--color-white);
   letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+  text-align: center;
   font-weight: 500;
 }
 .product img,
@@ -54,15 +54,15 @@ p.section-heading {
 }
 .product1,
 .overlay1 {
-  background-color: #dd9103;
+  background-color: var(--color-overlay-orange);
 }
 .product2,
 .overlay2 {
-  background-color: #940294;
+  background-color: var(--color-overlay-purple);
 }
 .product3,
 .overlay3 {
-  background-color: rgb(2, 158, 2);
+  background-color: var(--color-overlay-green);
 }
 .overlay {
   position: absolute;
@@ -70,7 +70,6 @@ p.section-heading {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
@@ -79,30 +78,23 @@ p.section-heading {
   opacity: 1;
 }
 .overlay__text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  color: var(--color-white);
   text-align: center;
   width: 100%;
   padding: 2rem;
   font-size: 1.5rem;
   line-height: 2.7rem;
 }
-.overlay__text--content{
-    text-align: justify;
+.overlay__text--content {
+  text-align: justify;
 }
-.overlay__text .btn-transparent{
-    padding: .6rem 2rem;
-    margin: 1rem auto;
-    display: inline-block;
-    color: var(--color-white);
-    border-color: var(--color-white);
+.overlay__text .btn-transparent {
+  padding: 0.6rem 2rem;
+  margin: 1rem auto;
+  display: inline-block;
+  color: var(--color-white);
+  border-color: var(--color-white);
 }
-.overlay__text .btn-transparent:hover{
-    border-color: var(--color-green);
+.overlay__text .btn-transparent:hover {
+  border-color: var(--color-green);
 }
