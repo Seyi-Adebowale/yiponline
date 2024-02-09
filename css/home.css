@@ -72,15 +72,6 @@
   text-align: justify;
   animation: slideInLeft 1s ease-out 1.5s backwards;
 }
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  font-size: 1.6rem;
-  transition: all 0.2s;
-  position: relative;
-}
 .btn-main {
   border-radius: 10rem;
   color: var(--color-blue);
@@ -89,7 +80,6 @@
   margin-top: 2rem;
   animation: slideInBottom 1s ease-out 2.3s backwards;
 }
-
 .btn-main:hover::after {
   transform: scaleY(1.6) scaleX(1.4);
   opacity: 0;
@@ -126,9 +116,7 @@
     width: 100%;
     margin: 0 auto 2rem;
     text-align: center;
-  
   } 
- 
   .hero__img--container {
     width: 97%;
   }
@@ -147,7 +135,6 @@
   .hero__text--heading {
     font-size: 3rem;
   }
- 
   .btn-main {
     margin-top: 5px;
   }
@@ -227,6 +214,7 @@
   display: inline-block;
   color: var(--color-dark);
   text-align: justify;
+  padding-top: 1rem;
 }
 .about__img--container {
   width: 40%;
@@ -236,7 +224,7 @@
   transform: scale(0.9);
 }
 .about__img {
-  width: 45%;
+  width: 50%;
   box-shadow: 0 15px 4px rgba(0, 0, 0, 0.4);
   border-radius: 0.2rem;
   position: absolute;
@@ -263,30 +251,34 @@
   top: 10rem;
 }
 @media only screen and (max-width: 1024px) {
+  .about{
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem 3rem;
+  }
   .about__text p {
     font-size: 2.2rem;
   }
-  .about__text span {
-    font-size: 1.5rem;
+  .flex-item-2 {
+    width: 90%;
+  }
+  .about__img--container{
+    height: 32vh;
+  }
+  .about__text--container {
+    margin: 0 auto 4rem;
+    text-align: center;
   }
   .about__img {
-    width: 60%;
+    width: 50%;  
   }
 }
 @media only screen and (max-width: 768px) {
   .about__text p {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
   .about__text span {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (max-width: 640px) {
-  .flex-item-2 {
-    width: 90%;
-  }
-  .about__text--container {
-    margin-bottom: 2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -343,10 +335,12 @@
 .mv__item:hover {
   transform: translateY(-1rem);
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1024px) {
   .mv-section {
-    margin-top: 65%;
+    margin-top: 5rem;
   }
+}
+@media only screen and (max-width: 640px) {
   .mv__item {
     width: 90%;
     margin-bottom: 4rem;
@@ -367,7 +361,7 @@
   width: 25%;
   background-color: var(--color-white);
   box-shadow: 5px 1px 1px rgba(0, 0, 0, 0.3);
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   margin-bottom: 3rem;
   border-radius: 2rem;
   cursor: pointer;

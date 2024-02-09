@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
           navMenu.style.right = "0";
         }
         function hideMenu() {
-          navMenu.style.right = "-800px";
+          navMenu.style.right = "-150rem";
         }
 
         const menuBtnOpen = document.querySelector(".menu__btn--open");

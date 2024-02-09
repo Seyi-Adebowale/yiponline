@@ -25,6 +25,16 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 640px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  html {
+    font-size: 52%;
+  }
+}
 a {
   text-decoration: none;
   color: var(--color-darker);
@@ -106,16 +116,13 @@ main {
 }
 @media only screen and (max-width: 1024px) {
   .header__nav {
-    width: 65%;
-  }
-  .header__nav {
     position: absolute;
     z-index: 9;
     background-color: var(--color-white);
     height: 100vh;
     width: 100%;
-    top: -2rem;
-    right: -800px;
+    top: 0rem;
+    right: -150rem;
     transition: 0.7s;
     position: fixed;
   }
@@ -190,6 +197,15 @@ main {
 }
 
 /* Buttons */
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+  position: relative;
+}
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -227,7 +243,7 @@ main {
 }
 .cta__text--heading {
   color: var(--color-white);
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
   width: 50%;
 }
@@ -240,7 +256,6 @@ main {
   color: var(--color-green);
   letter-spacing: 0.1rem;
   margin: 0;
-  font-size: 1.6rem;
 }
 .cta-btn:hover {
   border-color: var(--color-blue);
@@ -309,8 +324,8 @@ main {
 }
 .footer__bottom--icons {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-evenly;
+  width: 25rem;
   margin: 1rem auto;
 }
 .footer__bottom--icons i {
@@ -406,6 +421,11 @@ a i.fa-arrow-up:hover {
   margin-bottom: 2rem;
   width: 90%;
   margin: auto;
+}
+@media only screen and (max-width: 640px) {
+  .section-text {
+    width: 95%;
+  }
 }
 
 /* Animated sections */
