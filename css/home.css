@@ -197,7 +197,7 @@
 
 /* Who we are section */
 .about-section {
-  margin-top: -10%;
+  margin-top: -8.5%;
   background-image: url(https://www.yiponline.com/resources/img/demos/it-services/puzzle-and-dots.png);
   padding-bottom: 2rem;
 }
@@ -219,6 +219,7 @@
 .about__img--container {
   width: 40%;
   position: relative;
+  height: 42vh;
 }
 .about__img--container:hover .about__img:not(:hover) {
   transform: scale(0.9);
