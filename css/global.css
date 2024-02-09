@@ -368,7 +368,7 @@ main {
 }
 
 /* To Top Arrow */
-a i.fa-arrow-up {
+i.fa-arrow-up {
   position: fixed;
   display: none;
   bottom: 2rem;

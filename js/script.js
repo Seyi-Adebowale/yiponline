@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => response.text())
       .then((data) => {
         footerContainer.innerHTML = data;
-        let toTopIcon = document.querySelector("a i.fa-arrow-up");
+        let toTopIcon = document.querySelector("i.fa-arrow-up");
         function toTopFunction() {
           if (
             document.body.scrollTop > 600 ||
@@ -72,6 +72,13 @@ document.addEventListener("DOMContentLoaded", function () {
         window.onscroll = function () {
           toTopFunction();
         };
+
+        toTopIcon.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
       })
       .catch((error) => {
         console.error("Error loading footer:", error);
